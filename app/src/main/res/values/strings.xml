@@ -2,4 +2,8 @@
   <string name="app_name">Constraint Layout Demo</string>
   <string name="dev_name">Rebecca Franks</string>
   <string name="dev_role">Android Developer</string>
+  <string name="button_text">Button</string>
+  <string name="add_friend_text">Add Friend</string>
+  <string name="message_text">Message</string>
+  <string name="remove_text">Remove</string>
 </resources>
