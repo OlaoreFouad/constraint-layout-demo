@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+	android:id="@+id/hiText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Hi"
+	android:textSize="26sp"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+	android:id="@+id/bottomButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Button"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toBottomOf="@id/hiText" />
+
+  <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Side text"
+	android:textSize="26sp"
+	app:layout_constraintStart_toEndOf="@id/barrier"
+	app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.Barrier
+	android:id="@+id/barrier"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	app:barrierDirection="right"
+	app:constraint_referenced_ids="bottomButton, hiText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

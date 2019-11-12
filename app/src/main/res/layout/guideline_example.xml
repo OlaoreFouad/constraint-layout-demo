@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <Button
+	android:layout_width="wrap_content"
+	app:layout_constraintTop_toTopOf="@id/topGuideline"
+	android:layout_height="wrap_content"
+	app:layout_constraintStart_toStartOf="@id/startGuideline"
+	android:text="Button"
+	android:id="@+id/button"/>
+
+  <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="TextView"
+	app:layout_constraintTop_toBottomOf="@id/button"
+	app:layout_constraintStart_toStartOf="@id/startGuideline"
+	android:id="@+id/text"/>
+
+  <Button
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Button"
+	android:id="@+id/rightButton"
+	app:layout_constraintTop_toTopOf="parent"
+	app:layout_constraintBottom_toBottomOf="parent"
+	app:layout_constraintVertical_bias=".7"
+	android:layout_marginEnd="0dp"
+	app:layout_constraintEnd_toStartOf="@id/endGuideline"/>
+
+  <TextView
+	android:layout_width="wrap_content"
+	android:id="@+id/rightText"
+	android:text="TextView"
+	app:layout_constraintBottom_toTopOf="@id/rightButton"
+	app:layout_constraintEnd_toStartOf="@id/endGuideline"
+	android:layout_height="wrap_content" />
+
+  <!--Guidelines-->
+
+  <androidx.constraintlayout.widget.Guideline
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:id="@+id/startGuideline"
+	app:layout_constraintGuide_begin="16dp"/>
+
+  <androidx.constraintlayout.widget.Guideline
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:id="@+id/topGuideline"
+	app:layout_constraintGuide_begin="20dp"/>
+
+  <androidx.constraintlayout.widget.Guideline
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:id="@+id/endGuideline"
+	app:layout_constraintGuide_end="16dp"
+	android:orientation="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
