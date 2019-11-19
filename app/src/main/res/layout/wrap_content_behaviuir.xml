@@ -19,8 +19,8 @@
 	android:layout_height="wrap_content"
 	android:text="Short example text, some overlapping text by this way too"
 	android:textSize="20sp"
-	app:layout_constraintEnd_toEndOf="parent"
 	app:layout_constraintBottom_toBottomOf="@id/profile_pic"
+	app:layout_constraintEnd_toEndOf="parent"
 	app:layout_constraintStart_toEndOf="@id/profile_pic"
 	app:layout_constraintTop_toTopOf="parent" />
 
